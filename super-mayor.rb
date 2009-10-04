@@ -24,7 +24,8 @@ OAUTH_SECRET = '86f582af859b1ccbf1457ffc9329833d'
 use Rack::Session::Pool
 
 get '/' do 
-  
+  @record = nil
+  erb :index
 end
 
 get '/login' do
