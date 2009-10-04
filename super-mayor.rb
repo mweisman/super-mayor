@@ -4,6 +4,11 @@ require 'open-uri'
 require 'oauth'
 require 'activerecord'
 
+ActiveRecord::Base.establish_connection(
+  :adapter => 'sqlite3',
+  :dbfile =>  'super_mayor.sqlite3'
+)
+
 OAUTH_KEY = '563c0300213b2a25ccf63c6f46c1c9eb04ac814b4'
 OAUTH_SECRET = 'f7098abcbca7886c9c1cc0c7ded773ca'
 
