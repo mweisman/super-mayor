@@ -3,15 +3,35 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-Super Mayor: When being the mayor of one location isn't enough	
+<title>Super Mayor: When being the mayor of one location isn't enough</title>
+<style type="text/css" media="screen">
+  body {
+    background: #2c2c2c url(/background.gif) no-repeat top center;
+  }
+  #logo {
+    width: 418px;
+    height: 88px;
+    background: url(/logo.png) no-repeat;
+    margin: 2.5em auto;
+  }
+  #logo h1,
+  #logo p {
+    display: none;
+  }
+  
+</style>
 </head>
 <body>
+  <div id='logo'>
+    <h1>Super Mayors</h1>
+    <p>Mayor = 1. That&apos;s all you need to know.</p>
+  </div>
+  <img src="super-mayor.jpg" width="439" height="554" alt="Super Mayor">
 	Reid B. was the mayor of everything in Portland, at WhereCampPDX we questioned...Could we step it up.
-	<img src="super-mayor.jpg" width="439" height="554" alt="Super Mayor">
+	
 	<form action="login" method="GET">
 		<input type="submit" value="Superify Me!">
 	</form>
-<h1>Super Mayors</h1>
  <% unless @records.nil? %>
  <table>
 	<tr>
