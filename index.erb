@@ -1,0 +1,26 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+Super Mayor: When being the mayor of one location isn't enough	
+</head>
+<body>
+	Reid B. was the mayor of everything in Portland, at WhereCampPDX we questioned...Could we step it up.
+	<img src="super-mayor.jpg" width="439" height="554" alt="Super Mayor">
+	<form action="login" method="GET">
+		<input type="submit" value="Superify Me!">
+	</form>
+<h1>Super Mayors</h1>
+ <% unless @records.nil? %>
+ <table>
+	<tr>
+	  <td>Super Mayor</td>
+	  <td>District</td>
+	</tr>
+	<% for record in @records %>
+	  <td><%= record[:firstname].to_s %></td>
+      <td><%= record[:districtname].to_s %></td>
+    <% end %>
+</body>
+</html>
