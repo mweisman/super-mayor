@@ -2,7 +2,7 @@ class CreateMagic < ActiveRecord::Migration
   def self.up
     create_table :magic do |t|
       t.belongs_to :user, :district
-      i.integer :mayorships
+      t.integer :mayorships
     end
   end
   
